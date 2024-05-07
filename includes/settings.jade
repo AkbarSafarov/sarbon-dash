@@ -1,0 +1,28 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <div class="name_title">Settings</div>
+    </div>
+    <div class="settings_row">
+        <div class="title">Change password</div>
+        <form action="">
+            <div class="field">
+                <div class="field_name">Current password</div>
+                <input type="password" name="current password" placeholder="password">
+            </div>
+            <div class="field">
+                <div class="field_name">New password</div>
+                <input type="password" name="new-password" placeholder="Enter new password">
+            </div>
+            <div class="field">
+                <div class="field_name">Confirm new password</div>
+                <input type="password" name="confirm-password" placeholder="Confirm new password">
+            </div>
+            <div class="form_btns">
+                <button type="submit" class="btn_button">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+include _footer.jade

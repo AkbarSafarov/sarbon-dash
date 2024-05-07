@@ -1,0 +1,106 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <a href="events.html" class="name_title btn_back">Edit event</a>
+    </div>
+    <div class="event_actions">
+        <div class="event_detal">
+            <div class="event_item">
+                <div class="name">Client name</div>
+                <div class="val">Leo McKenzie</div>
+            </div>
+            <div class="event_item">
+                <div class="name">Phone number</div>
+                <div class="val">+998 90 768-85-05</div>
+            </div>
+            <div class="event_item">
+                <div class="name">Guests</div>
+                <div class="val">300</div>
+            </div>
+            <div class="event_item">
+                <div class="name">Menu</div>
+                <div class="val">Gold (Customized)</div>
+            </div>
+            <div class="event_item">
+                <div class="name">Event date</div>
+                <div class="val">04/13/2024</div>
+            </div>
+            <div class="event_item">
+                <div class="name">Total price</div>
+                <div class="val">~151 490 000 UZS</div>
+            </div>
+        </div>
+        <div class="btn_button border add"><i></i></div>
+        <div class="btn_button border download"><i></i></div>
+        <div class="btn_button save">Save</div>
+        <div class="btn_button green send">Send to chief</div>
+    </div>
+    <div class="tabs_btns">
+        <ul>
+            <li class="active"><a href="edit-event.html" class="btn">Dishes</a></li>
+            <li><a href="edit-event-items.html" class="btn">Items</a></li>
+        </ul>
+    </div>
+    <div class="dashboard_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Бефстроганов</td>
+                    <td>20.09 |</td>
+                    <td>
+                        <div class="delete delete_btn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Бефстроганов</td>
+                    <td>20.09 |</td>
+                    <td>
+                        <div class="delete delete_btn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Бефстроганов</td>
+                    <td>20.09 |</td>
+                    <td>
+                        <div class="delete delete_btn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Бефстроганов</td>
+                    <td>20.09 |</td>
+                    <td>
+                        <div class="delete delete_btn"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Бефстроганов</td>
+                    <td>20.09 |</td>
+                    <td>
+                        <div class="delete delete_btn"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to delete event <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+include _footer.jade

@@ -1,0 +1,204 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <a href="dishes.html" class="name_title btn_back">Create new dish</a>
+    </div>
+    <div class="dish_actions">
+        <div class="enter_title">
+            <form action="">
+                <div class="field">
+                    <div class="field_name">Menu title</div>
+                    <input type="text" placeholder="Enter title">
+                </div>
+            </form>
+        </div>
+        <div class="btn_button border red">Remove dish</div>
+        <div class="btn_button border icon_plus add_new_dish">Add dishes</div>
+        <div class="btn_button create_item">Save</div>
+    </div>
+    <div class="dashboard_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Dishes</th>
+                    <th>Quantity</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Молоко</td>
+                    <td>9</td>
+                    <td><div class="delete delete_btn"></div></td>
+                </tr>
+                <tr>
+                    <td>Молоко</td>
+                    <td>9</td>
+                    <td><div class="delete delete_btn"></div></td>
+                </tr>
+                <tr>
+                    <td>Молоко</td>
+                    <td>9</td>
+                    <td><div class="delete delete_btn"></div></td>
+                </tr>
+                <tr>
+                    <td>Молоко</td>
+                    <td>9</td>
+                    <td><div class="delete delete_btn"></div></td>
+                </tr>
+                <tr>
+                    <td>Молоко</td>
+                    <td>9</td>
+                    <td><div class="delete delete_btn"></div></td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+<div class="form-popup-wrapper new_dish_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Add dishes</div>
+            <form action="">
+                <div class="field">
+                    <div class="field_name">Search</div>
+                    <select name="select-category" id="">
+                        <option value="">Type for search</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+                <ul class="list checkbox">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Молоко</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сыр</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Йогурт</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Масло</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сливки</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сметана</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Творог</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сырное масло</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сгущенное молоко</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Сухое молоко</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Морковь</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Картофель</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Помидоры</span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            <i></i>
+                            <span>Болгарский перец</span>
+                        </label>
+                    </li>
+                </ul>
+                <div class="form_btns">
+                    <button class="btn_button border delete_btn red">Remove</button>
+                    <button class="btn_button border cancel">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper deactivate_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, deactivate</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+include _footer.jade

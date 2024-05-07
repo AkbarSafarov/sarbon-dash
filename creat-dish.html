@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Тайтл</title>
+<link rel="stylesheet" type="text/css" href="css/lightpick.css">
+<link rel="stylesheet" type="text/css" href="css/spectrum.min.css">
+<link rel="stylesheet" href="css/main.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous" ></script>
+</head>
+<body>
+<div class="site_wrapper">
+<header class="header">
+<div class="logo">
+<a href="/">
+<img src="files/logo.png" alt="">
+</a>
+</div>
+<div class="right_header">
+<div class="dropdown_select header__lang">
+<div class="dropdown_select_name header__lang-title">English</div>
+<div class="dropdown_body">
+<div><a href="#" class="item">English</a></div>
+<div><a href="#" class="item">Русский</a></div>					
+</div>
+</div>
+</div>						
+</header>
+<div class="content_block_wr"><div class="dashboard_left_panel">
+<div class="burger"></div>
+<div class="dashboard_menu">
+<ul>
+<li class="opened">
+<a href="events.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Events</span>
+</a>
+<div class="line"></div>
+</li>
+<li>
+<a href="suppliers.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Suppliers</span>
+</a>
+</li>
+<li>
+<a href="items.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 3.05493C6.50005 3.55238 3 7.36745 3 12C3 16.9706 7.02944 21 12 21C16.6326 21 20.4476 17.5 20.9451 13H11V3.05493Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M20.4878 9H15V3.5123C17.5572 4.41613 19.5839 6.44285 20.4878 9Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Items</span>
+</a>
+</li>
+<li>
+<a href="dishes.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 15.5458C20.4771 15.5458 19.9542 15.6972 19.5 16C18.5917 16.6056 17.4083 16.6056 16.5 16C15.5917 15.3944 14.4083 15.3944 13.5 16C12.5917 16.6056 11.4083 16.6056 10.5 16C9.59167 15.3944 8.40833 15.3944 7.5 16C6.59167 16.6056 5.40833 16.6056 4.5 16C4.04584 15.6972 3.52292 15.5458 3 15.5458M9 6V8M12 6V8M15 6V8M9 3H9.01M12 3H12.01M15 3H15.01M21 21V14C21 12.8954 20.1046 12 19 12H5C3.89543 12 3 12.8954 3 14V21H21ZM18 12V10C18 8.89543 17.1046 8 16 8H8C6.89543 8 6 8.89543 6 10V12H18Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Dishes</span>
+</a>
+</li>
+<li>
+<a href="menu.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Menu</span>
+</a>
+</li>
+<li>
+<div class="line"></div>
+<a href="users.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 4.35418C12.7329 3.52375 13.8053 3 15 3C17.2091 3 19 4.79086 19 7C19 9.20914 17.2091 11 15 11C13.8053 11 12.7329 10.4762 12 9.64582M15 21H3V20C3 16.6863 5.68629 14 9 14C12.3137 14 15 16.6863 15 20V21ZM15 21H21V20C21 16.6863 18.3137 14 15 14C13.9071 14 12.8825 14.2922 12 14.8027M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Users</span>
+</a>
+</li>
+<li>
+<a href="settings.html">
+<span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
+</span>
+<span class="name">Settings</span>
+</a>
+</li>
+</ul>											
+</div>
+<div class="log_out_wr">
+<a href="" class="log_out_btn">Log out</a>
+</div>
+</div>	<div class="dashboard_right_content">
+<div class="dashboard_content_title">
+<a href="dishes.html" class="name_title btn_back">Create new dish</a>
+</div>
+<div class="dish_actions">
+<div class="enter_title">
+<form action="">
+<div class="field">
+<div class="field_name">Dish title</div>
+<input type="text" placeholder="Enter title">
+</div>
+</form>
+</div>
+<div class="btn_button border icon_plus add_new_dish">Add new item</div>
+<div class="btn_button create_item">Save</div>
+</div>
+<div class="dashboard_table">
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Quantity</th>
+<th>Measurement</th>
+<th></th>
+</tr>
+</thead>
+</table>
+<div class="empty_table">
+<div class="name">There is no ingredients. <br>Press Add new item</div>
+</div>
+</div>
+</div>
+<div class="form-popup-wrapper new_dish_popup">
+<div class="formExtraWrapper">
+<div class="close-form"></div>
+<div class="form_block">
+<div class="title">Add items</div>
+<form action="">
+<div class="field">
+<div class="field_name">Search</div>
+<select name="select-category" id="">
+<option value="">Type for search</option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+</div>
+<ul class="list checkbox">
+<li>
+<div class="name">Молочные продукты</div>
+<ul>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Молоко</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сыр</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Йогурт</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Масло</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сливки</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сметана</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Творог</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сырное масло</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сгущенное молоко</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Сухое молоко</span>
+</label>
+</li>
+</ul>
+</li>
+<li>
+<div class="name">Овощи</div>
+<ul>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Морковь</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Картофель</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Помидоры</span>
+</label>
+</li>
+<li>
+<label>
+<input type="checkbox">
+<i></i>
+<span>Болгарский перец</span>
+</label>
+</li>
+</ul>
+</li>
+</ul>
+<div class="form_btns">
+<button class="btn_button border delete_btn red">Remove</button>
+<button class="btn_button border cancel">Discard</button>
+<button type="submit" class="btn_button">Save</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="alert-popup-wrapper deactivate_popup">
+<div class="alertExtraWrapper">
+<div class="alert_block">
+<div class="icon"></div>
+<div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+<div class="btns">
+<button class="btn_button border cancel">No, cancel</button>
+<button type="submit" class="btn_button red">Yes, deactivate</button>
+</div>
+</div>
+</div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+<div class="alertExtraWrapper">
+<div class="alert_block">
+<div class="icon"></div>
+<div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+<div class="btns">
+<button class="btn_button border cancel">No, cancel</button>
+<button type="submit" class="btn_button red">Yes, delete</button>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+<div class="alert-popup-wrapper log_out_popup">
+<div class="alertExtraWrapper">
+<div class="alert_block">
+<div class="icon"></div>
+<div class="title">Are you sure you want to log out?</div>
+<div class="btns">
+<button class="btn_button border cancel">No, stay</button>
+<button type="submit" class="btn_button">Yes, log out</button>
+</div>
+</div>
+</div>
+</div>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

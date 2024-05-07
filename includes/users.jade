@@ -1,0 +1,141 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <div class="name_title">Users</div>
+        <div class="search_block">
+            <form action="">
+                <button type="submit"></button>
+                <input type="text" placeholder="Search">
+            </form>
+        </div>
+        <div class="btn_button icon_plus create_user">Create new user</div>
+    </div>
+    <div class="dashboard_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Username</th>
+                    <th>Account type</th>
+                    <th>Status</th>
+                    <th>Created at</th>
+                    <th width="1">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="full-name">Leo McKenzie</td>
+                    <td class="username">leo</td>
+                    <td class="type">Warehouse Employee</td>
+                    <td class="status"><div class="status_notused">Not active</div></td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_user">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="full-name">McKenzie Leo</td>
+                    <td class="username">mckenzie</td>
+                    <td class="type">Chief</td>
+                    <td class="status"><div class="status_active">Active</div></td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_user">Edit</div>
+                                </div>
+                                <div>
+                                    <div class="item delete_btn">Delete</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="form-popup-wrapper users_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Create new event</div>
+            <form action="">
+                <div class="field_row column-3">
+                    <div class="field">
+                        <div class="field_name">Name</div>
+                        <input type="text" name="full-name" placeholder="Enter full name">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">User name</div>
+                        <input type="text" name="username" placeholder="Enter username">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Password</div>
+                        <input type="password" name="password" placeholder="">
+                    </div>
+                </div>
+                <div class="field_row column-2">
+                    <div class="field">
+                        <div class="field_name">Account type</div>
+                        <select name="type" id="">
+                            <option value="">Select form the list</option>
+                            <option value="Chief">Chief</option>
+                            <option value="Warehouse Employee">Warehouse Employee</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Status</div>
+                        <select name="status" id="">
+                            <option value="">Select form the list</option>
+                            <option value="Not active">Not active</option>
+                            <option value="Active">Active</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border cancel">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper deactivate_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, deactivate</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+include _footer.jade

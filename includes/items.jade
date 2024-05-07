@@ -1,0 +1,171 @@
+include _header.jade
+include _left_panel.jade
+<div class="dashboard_right_content">
+    <div class="dashboard_content_title">
+        <div class="name_title">Items</div>
+        <div class="search_block">
+            <form action="">
+                <button type="submit"></button>
+                <input type="text" placeholder="Search">
+            </form>
+        </div>
+        <div class="btn_button icon_plus create_item">Create new item</div>
+    </div>
+    <div class="dashboard_table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item ID</th>
+                    <th>Title</th>
+                    <th>Supplier</th>
+                    <th>Measurement</th>
+                    <th>Price (UZS)</th>
+                    <th>Created at</th>
+                    <th width="1">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#52624</td>
+                    <td class="item-title">Молоко</td>
+                    <td class="select-category">Молочные</td>
+                    <td class="select-measurement">Kg</td>
+                    <td class="item-price">72 342</td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_item">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#52624</td>
+                    <td class="item-title">Масло</td>
+                    <td class="select-category">Молочные</td>
+                    <td class="select-measurement">Kg</td>
+                    <td class="item-price">72 342</td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_item">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#52624</td>
+                    <td class="item-title">Творог</td>
+                    <td class="select-category">Овощи</td>
+                    <td class="select-measurement">j</td>
+                    <td class="item-price">72 342</td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_item">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#52624</td>
+                    <td class="item-title">Картофель</td>
+                    <td class="select-category">Овощи</td>
+                    <td class="select-measurement">g</td>
+                    <td class="item-price">72 342</td>
+                    <td>03/21/2024 18:50</td>
+                    <td>
+                        <div class="dropdown_select">
+                            <div class="dropdown_select_name action_btn"></div>
+                            <div class="dropdown_body">
+                                <div>
+                                    <div class="item edit_btn_item">Edit</div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="form-popup-wrapper item_popup">
+    <div class="formExtraWrapper">
+        <div class="close-form"></div>
+        <div class="form_block">
+            <div class="title">Create new item</div>
+            <form action="">
+                <div class="field_row column-4">
+                    <div class="field">
+                        <div class="field_name">Tittle</div>
+                        <input type="text" name="item-title" placeholder="Enter title">
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Measurement</div>
+                        <select name="select-measurement" id="">
+                            <option value="">Select from the list</option>
+                            <option value="Kg">Kg</option>
+                            <option value="L">L</option>
+                            <option value="g">g</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Category</div>
+                        <select name="select-category" id="">
+                            <option value="">Select category</option>
+                            <option value="Молочные">Молочные</option>
+                            <option value="Овощи">Овощи</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <div class="field_name">Price (UZS)</div>
+                        <input type="text" name="item-price" placeholder="Enter price">
+                    </div>
+                </div>
+                <div class="form_btns">
+                    <button class="btn_button border delete_btn red" style="display: none;">Remove</button>
+                    <button class="btn_button border cancel">Discard</button>
+                    <button type="submit" class="btn_button">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper deactivate_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to deactivate account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, deactivate</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="alert-popup-wrapper delete_popup">
+    <div class="alertExtraWrapper">
+        <div class="alert_block">
+            <div class="icon"></div>
+            <div class="title">You are going to delete account <br>+(998) 90 819-12-90, are you sure?</div>
+            <div class="btns">
+                <button class="btn_button border cancel">No, cancel</button>
+                <button type="submit" class="btn_button red">Yes, delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+include _footer.jade

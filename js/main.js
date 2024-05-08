@@ -88,7 +88,7 @@ $(function(){
         });
     }
 
-    //formPopup('.create_event,.edit_btn_event','.event_popup', true);
+    formPopup('.create_event','.event_popup', true);
     formPopup('.create_supplier,.edit_btn_supplier','.supplier_popup', true);
     formPopup('.create_item,.edit_btn_item','.item_popup', true);
     formPopup('.add_new_dish','.new_dish_popup', true);

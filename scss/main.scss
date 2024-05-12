@@ -338,6 +338,19 @@ img, textarea, input, table {
         bottom: auto !important;
         background: #fff;
 
+        .jq-selectbox__search {
+            display: block !important;
+            padding: 16px;
+
+            input {
+                width: 100%;
+                height: 36px;
+                padding: 0 16px;
+                border-radius: 6px;
+                border: 1px solid #cbd5e1;
+            }
+        }
+
         ul {
             padding: 0 16px;
             margin: 0;
@@ -1029,6 +1042,7 @@ img, textarea, input, table {
     .header {
         border: none;
         background: none;
+        padding: 16px;
     }
 
     .content_block_wr {
@@ -1036,7 +1050,7 @@ img, textarea, input, table {
     }
 }
 
-.reg_block_tg {
+.reg_block_wr {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1045,12 +1059,12 @@ img, textarea, input, table {
     .inner {
         border-radius: 8px;
         width: 540px;
-        padding: 32px 24px 24px;
+        padding: 32px 16px 32px;
         background: #fff;
         text-align: center;
 
         .logo {
-            padding-bottom: 52px;
+            padding-bottom: 24px;
         }
 
         @media all and (max-width: 767px){
@@ -1061,29 +1075,8 @@ img, textarea, input, table {
             }
         }
 
-        .btn_tg {
-            cursor: pointer;
-            text-decoration: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 12px 20px;
-            background: #24a1de;
-            border-radius: 8px;
-            gap: 10px;
-
-            .icon {
-                flex: 0 0 40px;
-                height: 40px;
-                background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='40' height='40' rx='20' fill='url(%23paint0_linear_295_1356)' /%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.05344 19.7889C14.8838 17.2487 18.7717 15.574 20.717 14.7649C26.2712 12.4547 27.4253 12.0534 28.1776 12.0402C28.343 12.0373 28.7129 12.0783 28.9526 12.2727C29.1549 12.4369 29.2106 12.6587 29.2372 12.8143C29.2639 12.97 29.297 13.3246 29.2707 13.6017C28.9697 16.7641 27.6673 24.4386 27.0047 27.9806C26.7244 29.4794 26.1724 29.9819 25.6379 30.0311C24.4765 30.138 23.5946 29.2635 22.4696 28.5261C20.7094 27.3723 19.7149 26.654 18.0063 25.528C16.0317 24.2268 17.3118 23.5116 18.4371 22.3428C18.7316 22.0369 23.8489 17.3823 23.948 16.96C23.9603 16.9072 23.9718 16.7104 23.8549 16.6065C23.738 16.5025 23.5654 16.5381 23.4408 16.5663C23.2643 16.6064 20.4522 18.465 15.0047 22.1423C14.2065 22.6904 13.4835 22.9574 12.8358 22.9434C12.1217 22.928 10.748 22.5397 9.72685 22.2077C8.47435 21.8006 7.47888 21.5853 7.56556 20.8939C7.61071 20.5337 8.10667 20.1654 9.05344 19.7889Z' fill='white' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_295_1356' x1='20' y1='0' x2='20' y2='39.7033' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%232AABEE' /%3E%3Cstop offset='1' stop-color='%23229ED9' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E") 50% no-repeat;
-            }
-
-            .text {
-                font-weight: 500;
-                font-size: 16px;
-                color: #fff;
-                white-space: nowrap;
-            }
+        .form_btns {
+            text-align: right;
         }
     }
 }
@@ -1989,6 +1982,18 @@ img, textarea, input, table {
         height: 18px;
         margin: 0 auto;
         background: url("data:image/svg+xml,%3Csvg width='19' height='18' viewBox='0 0 19 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.74995 5.40005C8.75584 5.40005 7.94995 4.59416 7.94995 3.60005C7.94995 2.60594 8.75584 1.80005 9.74995 1.80005C10.7441 1.80005 11.55 2.60594 11.55 3.60005C11.55 4.59416 10.7441 5.40005 9.74995 5.40005Z' fill='%2311150E' /%3E%3Cpath d='M9.74995 10.8C8.75584 10.8 7.94995 9.99416 7.94995 9.00005C7.94995 8.00594 8.75584 7.20005 9.74995 7.20005C10.7441 7.20005 11.55 8.00594 11.55 9.00005C11.55 9.99416 10.7441 10.8 9.74995 10.8Z' fill='%2311150E' /%3E%3Cpath d='M9.74995 16.2C8.75584 16.2 7.94995 15.3942 7.94995 14.4C7.94995 13.4059 8.75584 12.6 9.74995 12.6C10.7441 12.6 11.55 13.4059 11.55 14.4C11.55 15.3942 10.7441 16.2 9.74995 16.2Z' fill='%2311150E' /%3E%3C/svg%3E") 50% no-repeat;
+    }
+
+    form {
+        input {
+            border: none;
+            font-size: 16px;
+            font-weight: 510;
+            line-height: 19.09px;
+            text-align: left;
+            color: #11150E;
+            background: none;
+        }
     }
 
     .dropdown_select {

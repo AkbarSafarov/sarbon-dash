@@ -1,13 +1,22 @@
 include _header-main.jade
-	<div class="reg_block_tg">
-		<div class="inner">
-			<div class="logo">
-				<img src="files/logo.png" alt="">
-			</div>
-			<a href="" class="btn_tg">
-				<span class="icon"></span>
-				<span class="text">Continue with Telegram</span>
-			</a>
-		</div>
-	</div>									
+<div class="reg_block_wr">
+    <div class="inner">
+        <div class="logo">
+            <img src="files/logo-log.png" alt="">
+        </div>
+        <form action="">
+            <div class="field">
+                <div class="field_name">Login</div>
+                <input type="text" name="login" placeholder="Enter login">
+            </div>
+            <div class="field">
+                <div class="field_name">Password</div>
+                <input type="password" name="password" placeholder="Enter password">
+            </div>
+            <div class="form_btns">
+                <button type="submit" class="btn_button">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
 include _footer.jade

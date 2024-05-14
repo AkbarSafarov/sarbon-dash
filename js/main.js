@@ -287,3 +287,23 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+ $(document).ready(function(){
+    $(".search_field").on("keyup", function(){
+        var inputVal = $(this).val().toLowerCase();
+        if(inputVal.length > 0){
+            $(".list.checkbox").find("span").each(function(){
+                var listItemText = $(this).text().toLowerCase();
+                var listItem = $(this).closest('li');
+                if(listItemText.indexOf(inputVal) > -1){
+                    listItem.show();
+                } else {
+                    listItem.hide();
+                }
+            });
+        } else {
+            $(".list.checkbox").find("li").show();
+        }
+    });
+});
+ 

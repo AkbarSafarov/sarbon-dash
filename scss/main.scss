@@ -2894,6 +2894,16 @@ img, textarea, input, table {
     }
 }
 
+.autocomplete-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 100px;
+    background: #fff;
+    z-index: 10;
+}
+
 .list.checkbox  {
     padding: 0;
     margin: 0;
